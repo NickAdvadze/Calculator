@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(0, 34, 31);
+    background-color: rgb(11, 17, 17);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,14 +22,60 @@ body {
 
 }
 
-.screenDiv {
-    border: 1px solid red;
-    border-radius: 25px;
-    height: 30%;
-}
-
 .keyboardDiv{
-    border: 2px solid yellow;
     height: 70%;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.keyboardDiv div {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.keyboardDiv div button {
+    width: 20%;
+    height: 100%;
+    color: antiquewhite;
+    border: 1px solid rgb(85, 85, 85);
+    background-color: rgb(49, 49, 49);
+    font-size: 150%;
+    border-radius: 15px;
+}
+
+.keyboardDiv div button:hover{
+    background-color: rgb(27, 27, 27);
+    border: 2px solid rgb(85, 85, 85);
+    color: rgb(252, 241, 225);
+}
+
+.zero {
+    flex: 0.8;
+}
+
+.screenDiv {
+    border-radius: 25px;
+    height: 30%;
+    padding: 10% 5%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.screen {
+    background-color: darkgrey;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    font-size: 90px;
+    padding: 0 2%;
 }
